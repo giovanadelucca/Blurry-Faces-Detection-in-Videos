@@ -1,0 +1,7 @@
+# requirements.in
+
+imutils
+opencv-python
+tensorflow
+numpy
+scipy
