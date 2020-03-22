@@ -30,10 +30,6 @@ Singular Value Decomposition (SVD) is one of the most useful techniques in Linea
 
 ### `Warning: To follow the documentation, it's necessary to use Ubuntu 18+ as operational system, but accompanying the documentation it's possible verify all the requirements and project dependencies to reproduce the configuration in another operational systems.`
 
-- **CMake**
-    ><code>$ sudo apt install cmake</code>
-- **Python3.5+**
-    ><code>$ sudo apt install python3</code>
 - **python3-venv**
     ><code>$ sudo apt install python3-venv</code>
 - **pip3**
@@ -74,6 +70,12 @@ From the project root directory:
 To learn more about **pip-tools** please refer to [documentation](https://pypi.org/project/pip-tools/).
 
 After running all these instructions the `requirements.txt` file will be generated and all the dependencies will be installed.
+
+#
+
+## Download Weights
+
+As mentioned before, two pre-trained models are available in FaceNet repository to download. These models are the key of the algorithm. One of them, wich is used in this experiment, is available in [weights](https://drive.google.com/drive/folders/1Thfg7WguOLfjZ3iAtdQqQNev6uoaXwsy?usp=sharing) and must be downloaded. It's fundamental put the downloaded `weitghts` folder inside `facenet_code` folder to garantee the code operation. 
 
 #
 
