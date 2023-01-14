@@ -134,6 +134,7 @@ class DetectBlur(object):
             if output_video is not None:
                 output_video.write(frame)
                 cv2.imwrite('output/'+video_name+'/'+'frames/frame_'+str(i+1)+'.jpg', frame)
+                
         if output_video is not None:
             output_video.release()
 
