@@ -6,7 +6,7 @@ import os
 from facenet_code.face import Face
 from facenet_code import detect_face
 
-tf.logging.set_verbosity(tf.logging.ERROR)
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 # tf.logging.set_verbosity(tf.logging.INFO)
 # tf.logging.set_verbosity(tf.logging.WARN)
 # tf.logging.set_verbosity(tf.logging.DEBUG)
@@ -27,8 +27,8 @@ class Detection:
 
     def _setup_mtcnn(self):
         with tf.Graph().as_default():
-            gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu_memory_fraction)
-            sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options, log_device_placement=False))
+            gpu_options = tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=gpu_memory_fraction)
+            sess = tf.compat.v1.Session(config=tf.compat.v1.ConfigProto(gpu_options=gpu_options, log_device_placement=False))
             with sess.as_default():
                 return detect_face.create_mtcnn(sess, None)
 
