@@ -6,7 +6,7 @@ import os
 from facenet_code.face import Face
 from facenet_code import detect_face
 
-#tf.logging.set_verbosity(tf.logging.ERROR)
+tf.logging.set_verbosity(tf.logging.ERROR)
 # tf.logging.set_verbosity(tf.logging.INFO)
 # tf.logging.set_verbosity(tf.logging.WARN)
 # tf.logging.set_verbosity(tf.logging.DEBUG)

@@ -133,8 +133,7 @@ class DetectBlur(object):
                         self.print_box(frame, text, "{:.2f}".format(blur_degree), boxes, (255,255,255))
             if output_video is not None:
                 output_video.write(frame)
-                cv2.imwrite('output/'+video_name+'/'+'frames/frame_'+str(i+1)+'.jpg', frame)
-                
+                cv2.imwrite('output/'+video_name+'/'+'frames/frame_'+str(i+1)+'.jpg', frame)    
         if output_video is not None:
             output_video.release()
 

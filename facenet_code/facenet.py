@@ -36,7 +36,7 @@ from tensorflow.python.training import training
 import re
 from tensorflow.python.platform import gfile
 
-#tf.logging.set_verbosity(tf.logging.ERROR)
+tf.logging.set_verbosity(tf.logging.ERROR)
 # tf.logging.set_verbosity(tf.logging.INFO)
 # tf.logging.set_verbosity(tf.logging.WARN)
 # tf.logging.set_verbosity(tf.logging.DEBUG)
